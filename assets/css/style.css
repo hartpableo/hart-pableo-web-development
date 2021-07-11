@@ -1,0 +1,419 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.accented {
+  color: #007575;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+body main {
+  width: 310px;
+  margin: auto;
+  height: auto;
+}
+
+body header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0.4375rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 450ms ease-in-out;
+  transition: all 450ms ease-in-out;
+}
+
+body header main {
+  width: 86.1111111111%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: "Bebas Neue", cursive;
+  padding: 0.25rem 0.6875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 450ms ease-in-out;
+  transition: all 450ms ease-in-out;
+}
+
+body header main .contact-number a {
+  color: #007575;
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1rem;
+}
+
+body header main .contact-number a .fa-phone-alt {
+  font-size: 1rem;
+  color: #007575;
+  margin-right: 0.5em;
+}
+
+body header main .brand-name a {
+  font-family: "Bebas Neue", cursive;
+  color: #000;
+  text-decoration: none;
+}
+
+body header main.scrolled-down {
+  border-radius: 0px;
+  width: 100%;
+  position: absolute;
+}
+
+body header.scrolled-down {
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+body .hero-section {
+  width: 100%;
+  min-height: 20rem;
+  background-image: url(../../imgs/hero-background-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+body .hero-section::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+body .hero-section main {
+  padding: 5rem 0 2.8125rem 0;
+}
+
+body .hero-section main .hero-text-container {
+  width: 13.3125rem;
+}
+
+body .hero-section main .hero-text-container h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+body .hero-section main .hero-text-container .line {
+  background: #00FFFF;
+  width: 10.3125rem;
+  height: 0.25rem;
+  display: block;
+  margin: 0.8125rem 0;
+}
+
+body .hero-section main .hero-text-container p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+body .hero-section main .hero-text-container .hero-cta {
+  margin: 1.6875rem 0 0 0;
+  padding: 0.5rem 1.125rem;
+  border: none;
+  border-radius: 0px;
+  background-color: #00FFFF;
+}
+
+body .hero-section main .hero-text-container .hero-cta a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.3125rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+body .highlight-article {
+  width: 100%;
+  height: 94.75rem;
+  padding: 2.9375rem 0;
+}
+
+body .highlight-article h1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto auto 1.625rem auto;
+  font-size: 1.875rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+body .highlight-article p {
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 150%;
+}
+
+body .highlight-article ol {
+  padding-left: 1rem;
+}
+
+body .highlight-article ol li {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+body .benefits-section {
+  width: 100%;
+  min-height: 62.5625rem;
+  background-color: #007575;
+  text-align: center;
+  color: #fff;
+  padding: 2.9375rem 0;
+}
+
+body .benefits-section h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.875rem;
+  margin-bottom: 3.1875rem;
+}
+
+body .benefits-section .benefit-icon {
+  font-size: 10.72rem;
+  margin-bottom: 1.8125rem;
+  color: #00FFFF;
+}
+
+body .benefits-section p {
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 3.5rem;
+  font-size: 0.875rem;
+}
+
+body .benefits-section p:last-child {
+  margin-bottom: 0;
+}
+
+body .note-section {
+  width: 100%;
+  min-height: 11.75rem;
+  padding: 2.9375rem 0;
+  text-align: center;
+}
+
+body .note-section h1 {
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 1.5rem;
+  font-size: 1.875rem;
+}
+
+body .note-section p {
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 0.875rem;
+}
+
+body .clients-section {
+  width: 100%;
+  min-height: 45.5625rem;
+  text-align: center;
+  background-color: #007575;
+  color: #fff;
+  padding: 2.9375rem 0;
+}
+
+body .clients-section h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.875rem;
+  margin-bottom: 2.9375rem;
+}
+
+body .clients-section .client h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.6875rem;
+}
+
+body .clients-section .client .client-logo {
+  width: 9.75rem;
+  height: 9.75rem;
+}
+
+body .clients-section .client p {
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 0.75rem;
+}
+
+body .main-cta-section {
+  width: 100%;
+  min-height: 17.625rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+body .main-cta-section h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.875rem;
+  margin-bottom: 2.9375rem;
+}
+
+body .main-cta-section p {
+  font-weight: 300;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+body .main-cta-section button {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.125rem;
+  background-color: #00FFFF;
+}
+
+body .main-cta-section button a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5625rem;
+}
+
+body .about-section {
+  width: 100%;
+  min-height: 39.1875rem;
+  padding: 2.9375rem 0;
+  background-color: #007575;
+  color: #fff;
+}
+
+body .about-section h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.875rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto auto 2.75rem auto;
+}
+
+body .about-section p {
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 0.875rem;
+}
+
+body .social-links-section {
+  width: 100%;
+  min-height: 8.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .social-links-section .social-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .social-links-section .social-container a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: black;
+}
+
+body .social-links-section .social-container a:nth-child(2):nth-child(2) {
+  margin: 0 2.125rem;
+}
+
+body footer {
+  width: 100%;
+  padding: 1.375rem 0;
+  text-align: center;
+  background-color: #000;
+}
+
+body footer p {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: white;
+}
+
+@media (min-width: 500px) {
+  body .highlight-article, body .clients-section, body .about-section {
+    min-height: auto;
+    height: auto;
+  }
+  body main {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  body .hero-section {
+    min-height: 28rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .hero-section main .hero-text-container {
+    width: 18rem;
+  }
+  body main {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1000px) {
+  body main {
+    width: 600px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
