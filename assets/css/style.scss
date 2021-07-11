@@ -26,6 +26,7 @@ body {
     width: 100%;
     min-height: 100vh;
     font-family: $primaryFont;
+    overflow-y: scroll;
     main {
         width: 310px;
         margin: auto;
@@ -139,7 +140,7 @@ body {
     }
     .highlight-article {
         width: 100%;
-        height: 94.75rem;
+        height: fit-content;
         padding: 2.9375rem 0;
         h1 {
             width: max-content;
@@ -320,7 +321,7 @@ body {
 
 @media (min-width: 500px) {
     body {
-        .highlight-article, .clients-section, .about-section {
+        .clients-section, .about-section {
             min-height: auto;
             height: auto;
         }
