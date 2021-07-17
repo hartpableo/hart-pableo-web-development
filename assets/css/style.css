@@ -24,6 +24,11 @@ body {
   overflow-y: scroll;
 }
 
+body p, body li {
+  font-size: 1.1rem !important;
+  line-height: 1.7rem !important;
+}
+
 body main {
   width: 310px;
   margin: auto;
@@ -69,7 +74,7 @@ body header main .contact-number a {
 }
 
 body header main .contact-number a .fa-phone-alt {
-  font-size: 1rem;
+  font-size: 1rem !important;
   color: #007575;
   margin-right: 0.5em;
 }
@@ -125,7 +130,7 @@ body .hero-section main .hero-text-container {
 }
 
 body .hero-section main .hero-text-container h1 {
-  font-size: 1.875rem;
+  font-size: 1.875rem !important;
   font-weight: 700;
 }
 
@@ -138,9 +143,9 @@ body .hero-section main .hero-text-container .line {
 }
 
 body .hero-section main .hero-text-container p {
-  font-size: 0.875rem;
+  font-size: 0.875rem !important;
   font-weight: 400;
-  line-height: 150%;
+  line-height: 150% !important;
 }
 
 body .hero-section main .hero-text-container .hero-cta {
@@ -378,7 +383,7 @@ body footer {
 }
 
 body footer p {
-  font-size: 0.625rem;
+  font-size: 0.625rem !important;
   font-weight: 400;
   color: white;
 }
