@@ -66,17 +66,14 @@ body header main {
   transition: all 450ms ease-in-out;
 }
 
-body header main .contact-number a {
+body header main .email-header a {
   color: #007575;
   text-decoration: none;
-  font-family: "Bebas Neue", cursive;
-  font-size: 1rem;
 }
 
-body header main .contact-number a .fa-phone-alt {
-  font-size: 1rem !important;
-  color: #007575;
+body header main .email-header a i {
   margin-right: 0.5em;
+  font-size: 1.25rem;
 }
 
 body header main .brand-name a {
